@@ -1,0 +1,98 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold.",
+    "image": "https://i.postimg.cc/RZVKVy67/coat-Image.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Winter Grooming & Paw Treatment",
+    "providerName": "CozyPets Grooming",
+    "providerEmail": "hello@cozypets.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Professional grooming with moisturizing paw balm and winter-safe shampoo.",
+    "image": "https://i.ibb.co.com/0jPNB7Kq/images.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Pet Health Checkup",
+    "providerName": "Happy Tails Vet Clinic",
+    "providerEmail": "contact@happytailsvet.com",
+    "price": 40,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Complete winter health examination including vaccination review and nutrition advice.",
+    "image": "https://i.ibb.co.com/xqvMgnt5/regular-check-ups.jpg",
+    "category": "Healthcare"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Indoor Pet Training Session",
+    "providerName": "SmartPaws Academy",
+    "providerEmail": "support@smartpaws.com",
+    "price": 35,
+    "rating": 4.6,
+    "slotsAvailable": 6,
+    "description": "Obedience and behavior training designed for indoor winter environments.",
+    "image": "https://i.ibb.co.com/Tqvgyw65/happy-man-enjoys-playtime-with-his-loyal-dog-indoors-strengthening-their-special-bond-eager-pet-look.jpg",
+    "category": "Training"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Pet Boarding (Heated Rooms)",
+    "providerName": "WarmStay Pet Resort",
+    "providerEmail": "booking@warmstay.com",
+    "price": 50,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Safe and cozy heated boarding rooms for pets during cold weather vacations.",
+    "image": "https://i.ibb.co.com/kVqNs03G/cattery-01.jpg",
+    "category": "Boarding"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Winter Photography for Pets",
+    "providerName": "Furry Moments Studio",
+    "providerEmail": "photos@furrymoments.com",
+    "price": 45,
+    "rating": 4.8,
+    "slotsAvailable": 4,
+    "description": "Professional indoor winter-themed photoshoot for your beloved pets.",
+    "image": "https://i.ibb.co.com/vxHsjDHy/istockphoto-516002500-612x612.jpg",
+    "category": "Photography"
+  },
+  {
+    "serviceId": 7,
+    "serviceName": "Nutritious Winter Meal Plan",
+    "providerName": "Healthy Paws Nutrition",
+    "providerEmail": "info@healthypaws.com",
+    "price": 28,
+    "rating": 4.7,
+    "slotsAvailable": 7,
+    "description": "Customized winter diet plans to keep your pet energetic and healthy.",
+    "image": "https://i.ibb.co.com/Xk5vsyK9/Shauna-Sever-nwmp.webp",
+    "category": "Nutrition"
+  },
+  {
+    "serviceId": 8,
+    "serviceName": "Pet Spa & Relaxation Therapy",
+    "providerName": "Snowy Paws Spa",
+    "providerEmail": "relax@snowypaws.com",
+    "price": 38,
+    "rating": 4.9,
+    "slotsAvailable": 3,
+    "description": "Warm oil massage and relaxation therapy to comfort pets during chilly days.",
+    "image": "https://i.ibb.co.com/B2CCWYSR/relaxed-labrador-retriever-enjoying-luxurious-spa-day-with-soft-towel-turban-accessory-1288058-2814.jpg",
+    "category": "Spa"
+  }
+]

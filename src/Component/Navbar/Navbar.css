@@ -1,0 +1,11 @@
+.navbar-container .active{
+    color: purple;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar-small-device .active{
+    background-color: rgb(231, 224, 224);
+    color:rgb(226, 33, 66);
+}
