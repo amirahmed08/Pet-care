@@ -9,6 +9,7 @@ import Authentication from "../Authentication/Authentication";
 import MyProfile from "../pages/MyProfile";
 import ServiceDetails from "../pages/ServiceDetails";
 import PrivateRoute from "../provider/PrivateRoute";
+import Loading from "../pages/Loading";
 
 
 const router = createBrowserRouter(
@@ -22,11 +23,13 @@ const router = createBrowserRouter(
                     path: '/',
                     Component: Home,
                     loader:()=> fetch('/servicesData.json'),
+                    hydrateFallbackElement:<Loading></Loading>,
                 },
                 {
                     path: '/services',
                     Component: Services,
                     loader:()=> fetch('/servicesData.json'),
+                    hydrateFallbackElement:<Loading></Loading>,
                 },
                 {
                     path: '/Profile',
@@ -39,6 +42,7 @@ const router = createBrowserRouter(
                         <ServiceDetails></ServiceDetails>
                     </PrivateRoute>,
                     loader:()=> fetch('/servicesData.json'),
+                    hydrateFallbackElement:<Loading></Loading>,
                 }
             ]
         },
