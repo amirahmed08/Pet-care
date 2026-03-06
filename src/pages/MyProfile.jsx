@@ -18,7 +18,7 @@ const MyProfile = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
       <div className="bg-white shadow-xl rounded-2xl max-w-3xl w-full p-8">
-        <div className='flex gap-6 items-center'>
+        <div className='flex gap-6 flex-col md:flex-row text-center md:text-start items-center'>
           <div>
             <img
               src={`${user? user.photoURL : userImg }`}
@@ -27,12 +27,13 @@ const MyProfile = () => {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-bold mt-4">Ikramul Haque</h2>
-            <p className="text-gray-500">{user && user.email}</p>
+            <h2 className="text-4xl font-bold mt-4">{user ? user.displayName : 'User Name'}</h2>
+            <p className="text-gray-500">{user ? user.email : 'user@example.com'}</p>
           </div>
         </div>
         {/* Logout */}
-        <div className="mt-8 text-center">
+        <div className="mt-8 text-center flex flex-col md:flex-row gap-6 justify-center">
+           <button className="px-6 py-2 bg-sky-500 text-white rounded-lg hover:bg-sky-600 transition">Update Your Profile</button>
           <button className="px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition">
             {
               user ?
