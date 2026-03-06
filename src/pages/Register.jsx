@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../provider/AuthProvider';
 
 const Register = () => {
-  const {createUser, setUser} = use(AuthContext)
+  const {createUser, setUser, updateUser} = use(AuthContext)
   const navigate = useNavigate()
   const handleRegister = (e) => {
     e.preventDefault()
@@ -17,10 +17,18 @@ const Register = () => {
     console.log(name, photo, email, password  )
      createUser(email, password)
      .then(result=>{
-      const user = result.user
-      setUser(user),
-      alert("Registration Successful")
-      navigate('/')
+      const user = result.user;
+      updateUser({displayName:name, photoURL:photo}).then(() =>{
+        // Profile updated!
+        setUser({...user, displayName:name, photoURL:photo}),
+        alert("Registration Successful")
+        navigate('/')
+      })
+      .catch((error) => {
+        // An error occurred
+        console.log(error)
+        setUser(user);
+      })
      })
      .catch((error) => {
     const errorCode = error.code;

@@ -1,6 +1,7 @@
 import React, { use } from 'react'
 import { AuthContext } from '../provider/AuthProvider'
 import { Link } from 'react-router'
+import userImg from '../assets/userImg.png'
 
 const MyProfile = () => {
   const { user, logOut } = use(AuthContext)
@@ -20,7 +21,7 @@ const MyProfile = () => {
         <div className='flex gap-6 items-center'>
           <div>
             <img
-              src="https://i.ibb.co.com/SXfHkZBv/icons8-user-40.png"
+              src={`${user? user.photoURL : userImg }`}
               alt="profile"
               className="w-28 h-28 rounded-full border-4 border-blue-400 bg-gray-500"
             />
