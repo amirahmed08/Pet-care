@@ -10,7 +10,7 @@ const Login = () => {
   const { signIn } = use(AuthContext)
   const [hide, setHide] = useState(true)
   const location = useLocation()
-  console.log(location)
+  // console.log(location)
   const navigate = useNavigate()
   const handleLogin = (e) => {  
     e.preventDefault()
@@ -19,7 +19,7 @@ const Login = () => {
     signIn(email, password)
     .then((result) => {
       const user = result.user
-      console.log(user)
+      // console.log(user)
       navigate(`${location.state? location.state : '/'}`)
     })  
     .catch((error) => {

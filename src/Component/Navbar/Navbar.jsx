@@ -4,13 +4,14 @@ import { motion } from "framer-motion";
 import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../../provider/AuthProvider';
 import './Navbar.css'
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const {user, logOut} = use(AuthContext)
 const handleLogout = () => {
   logOut().then(() => {
   // Sign-out successful.
-  alert('You logged out successfully!!')
+  toast.success('You logged out successfully!!')
 }).catch((error) => {
   // An error happened.
   console.log(error)

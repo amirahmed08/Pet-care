@@ -3,6 +3,7 @@ import { BiSolidHide } from "react-icons/bi";
 import { MdOutlineVisibility } from "react-icons/md";
 import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../provider/AuthProvider';
+import { toast } from "react-toastify";
 
 const Register = () => {
   const {createUser, setUser, updateUser} = use(AuthContext)
@@ -14,14 +15,14 @@ const Register = () => {
     const photo = e.target.photo.value
     const email = e.target.email.value
     const password = e.target.password.value
-    console.log(name, photo, email, password  )
+    // console.log(name, photo, email, password  )
      createUser(email, password)
      .then(result=>{
       const user = result.user;
       updateUser({displayName:name, photoURL:photo}).then(() =>{
         // Profile updated!
         setUser({...user, displayName:name, photoURL:photo}),
-        alert("Registration Successful")
+        toast.success("Registration Successful")
         navigate('/')
       })
       .catch((error) => {

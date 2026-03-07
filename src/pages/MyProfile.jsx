@@ -2,13 +2,14 @@ import React, { use } from 'react'
 import { AuthContext } from '../provider/AuthProvider'
 import { Link } from 'react-router'
 import userImg from '../assets/userImg.png'
+import { toast } from "react-toastify";
 
 const MyProfile = () => {
   const { user, logOut } = use(AuthContext)
   const handleLogout = () => {
     logOut()
       .then(() => {
-        alert('You logged out successfully!!')
+        toast.success('You logged out successfully!!')
       })
       .catch((error) => {
         // An error happened.
