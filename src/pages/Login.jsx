@@ -3,6 +3,7 @@ import { BiSolidHide } from "react-icons/bi";
 import { MdOutlineVisibility } from "react-icons/md";
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../provider/AuthProvider';
+import { toast } from "react-toastify";
 
 const Login = () => {
   const [emailError, setEmailError] = useState('')
@@ -21,6 +22,7 @@ const Login = () => {
       const user = result.user
       // console.log(user)
       navigate(`${location.state? location.state : '/'}`)
+      toast.success('You logged in successfully!!')
     })  
     .catch((error) => {
     const errorCode = error.code;

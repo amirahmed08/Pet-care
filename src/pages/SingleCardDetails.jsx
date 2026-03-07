@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaStar, FaEnvelope, FaTag } from "react-icons/fa";
+import { Link } from 'react-router';
 
 const SingleCardDetails = ({ singleServices }) => {
     // console.log(singleServices);
@@ -71,7 +72,7 @@ const SingleCardDetails = ({ singleServices }) => {
         </div>
       </div>
       <div className='text-2xl font-bold text-white text-center mt-10'>
-        <button className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">Back to Home</button>
+        <Link to="/"><button className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">Back to Home</button></Link>
       </div>
    </div>
   )
